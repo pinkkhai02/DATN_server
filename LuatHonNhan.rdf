@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16/"
+     xml:base="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-16="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Dành_cho_đối_tượng -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Dành_cho_đối_tượng">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Đối_tượng"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Thuộc_nhóm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Thuộc_nhóm"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Chi_tiết -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Chi_tiết"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Ghi_chú -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Ghi_chú"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Hình_thức_xử_phạt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Hình_thức_xử_phạt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Mức_xử_phạt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Mức_xử_phạt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Nội_dung -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Nội_dung"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Chấm_dứt_hôn_nhân -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Chấm_dứt_hôn_nhân">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Quy_định"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Cấp_dưỡng -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Cấp_dưỡng">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Quy_định"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Kết_hôn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Kết_hôn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Quy_định"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Nam_Nữ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Nam_Nữ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Đối_tượng"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Người_cùng_giới -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Người_cùng_giới">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Đối_tượng"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Quan_hệ_giữa_các_thành_viên_khác_của_gia_đình -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Quan_hệ_giữa_các_thành_viên_khác_của_gia_đình">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Quy_định"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Quan_hệ_giữa_vợ_và_chồng -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Quan_hệ_giữa_vợ_và_chồng">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Quy_định"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Quan_hệ_hôn_nhân_và_gia_đình_có_yếu_tố_nước_ngoài -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Quan_hệ_hôn_nhân_và_gia_đình_có_yếu_tố_nước_ngoài">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Quy_định"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Quy_định -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Quy_định"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Vợ_Chồng -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Vợ_Chồng">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Đối_tượng"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Đối_tượng -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Đối_tượng"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Chồng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Chồng"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Kết_hôn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Kết_hôn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Kết_hôn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Nam_Nữ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Nam_Nữ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Nam_Nữ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Người_cùng_giới -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Người_cùng_giới">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Người_cùng_giới"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Vợ_Chồng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Vợ_Chồng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Vợ_Chồng"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Điều_kiện_kết_hôn_nam_và_nữ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Điều_kiện_kết_hôn_nam_và_nữ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Kết_hôn"/>
+        <untitled-ontology-16:Dành_cho_đối_tượng rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Nam_Nữ"/>
+        <untitled-ontology-16:Thuộc_nhóm rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Kết_hôn"/>
+        <untitled-ontology-16:Chi_tiết>Điều 8 Khoản 2 Luật hôn nhân và giao đình</untitled-ontology-16:Chi_tiết>
+        <untitled-ontology-16:Ghi_chú>Việc kết hôn không thuộc một trong các trường hợp cấm kết hôn theo quy định tại các điểm a, b, c và d khoản 2 Điều 5 của Luật này.</untitled-ontology-16:Ghi_chú>
+        <untitled-ontology-16:Nội_dung>Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;
+Việc kết hôn do nam và nữ tự nguyện quyết định;
+Không bị mất năng lực hành vi dân sự;</untitled-ontology-16:Nội_dung>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Điều_kiện_kết_hôn_người_cùng_giới -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Điều_kiện_kết_hôn_người_cùng_giới">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Kết_hôn"/>
+        <untitled-ontology-16:Dành_cho_đối_tượng rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Người_cùng_giới"/>
+        <untitled-ontology-16:Thuộc_nhóm rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Kết_hôn"/>
+        <untitled-ontology-16:Chi_tiết>Điều 8 Khoản 2 Luật hôn nhân và gia đình 2014</untitled-ontology-16:Chi_tiết>
+        <untitled-ontology-16:Nội_dung>Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính.</untitled-ontology-16:Nội_dung>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Đăng_ký_kết_hôn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Đăng_ký_kết_hôn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Kết_hôn"/>
+        <untitled-ontology-16:Dành_cho_đối_tượng rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Nam_Nữ"/>
+        <untitled-ontology-16:Thuộc_nhóm rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Kết_hôn"/>
+        <untitled-ontology-16:Chi_tiết>Điều 9 Khoản 1 Luật hôn nhân và gia đình 2014</untitled-ontology-16:Chi_tiết>
+        <untitled-ontology-16:Ghi_chú>Việc kết hôn không được đăng ký theo quy định tại khoản này thì không có giá trị pháp lý.</untitled-ontology-16:Ghi_chú>
+        <untitled-ontology-16:Nội_dung>Việc kết hôn phải được đăng ký và do cơ quan nhà nước có thẩm quyền thực hiện theo quy định của Luật này và pháp luật về hộ tịch.</untitled-ontology-16:Nội_dung>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Đăng_ký_kết_hôn_vợ_chồng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Đăng_ký_kết_hôn_vợ_chồng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Kết_hôn"/>
+        <untitled-ontology-16:Dành_cho_đối_tượng rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Vợ_Chồng"/>
+        <untitled-ontology-16:Thuộc_nhóm rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Kết_hôn"/>
+        <untitled-ontology-16:Chi_tiết>Điều 9 Khoản 2 Luật hôn nhân và gia đình 2014</untitled-ontology-16:Chi_tiết>
+        <untitled-ontology-16:Nội_dung>Vợ chồng đã ly hôn muốn xác lập lại quan hệ vợ chồng thì phải đăng ký kết hôn</untitled-ontology-16:Nội_dung>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Nam,Nữ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/4/untitled-ontology-16#Nam,Nữ"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

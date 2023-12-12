@@ -1,0 +1,1006 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat/"
+     xml:base="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:luat="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#hasRequest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#hasRequest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vấn_đề_pháp_lý"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Yêu_cầu"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#hasResolution -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#hasResolution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vấn_đề_pháp_lý"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cách_giải_quyết"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#hasViolation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#hasViolation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vấn_đề_pháp_lý"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#relatesToLaw -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#relatesToLaw">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vấn_đề_pháp_lý"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Văn_bản_luật"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Ap_dung -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Ap_dung">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chi_tiết_hành_vi_vi_phạm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chi_tiết_hành_vi_vi_phạm">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chi_tiết_thủ_tục -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chi_tiết_thủ_tục">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vấn_đề_pháp_lý"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chi_tiết_về_cách_giải_quyết -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chi_tiết_về_cách_giải_quyết">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Bằng_tư_vấn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Bằng_đàm_phán"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cách_giải_quyết"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Phạt_bổ_sung"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Phạt_tiền"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chi_tiết_về_pháp_luật -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chi_tiết_về_pháp_luật">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Văn_bản_luật"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chi_tiết_về_vi_phạm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chi_tiết_về_vi_phạm">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vấn_đề_pháp_lý"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hình_phạt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hình_phạt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cách_giải_quyết"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Noi_dung -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Noi_dung">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Ten -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Ten">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_tri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_tri">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#YNghia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#YNghia">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#trang_web -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#trang_web">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Văn_bản_luật"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Bằng_tư_vấn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Bằng_tư_vấn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cách_giải_quyết"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Bằng_đàm_phán -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Bằng_đàm_phán">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cách_giải_quyết"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chung_sống_như_vợ_chồng -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chung_sống_như_vợ_chồng">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chế_độ_hôn_nhân_một_vợ_một_chồng -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chế_độ_hôn_nhân_một_vợ_một_chồng">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chế_độ_hôn_nhân_và_gia_đình -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chế_độ_hôn_nhân_và_gia_đình">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Yêu_cầu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cung_cấp_thông_tin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cung_cấp_thông_tin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cách_giải_quyết -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cách_giải_quyết"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cưỡng_ép_kết_hôn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cưỡng_ép_kết_hôn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_kết_hôn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cưỡng_ép_ly_hôn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cưỡng_ép_ly_hôn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_ly_hôn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cản_trở_kết_hôn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cản_trở_kết_hôn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_kết_hôn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cản_trở_ly_hôn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cản_trở_ly_hôn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_ly_hôn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Gia_đình -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Gia_đình">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Yêu_cầu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hôn_nhân -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hôn_nhân">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Yêu_cầu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Không_thông_báo_cho_cơ_quan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Không_thông_báo_cho_cơ_quan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Kết_hôn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Kết_hôn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Yêu_cầu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Kết_hôn_trái_pháp_luật -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Kết_hôn_trái_pháp_luật">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Yêu_cầu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#LUẬT_HÔN_NHÂN_GIA_ĐÌNH_2014 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#LUẬT_HÔN_NHÂN_GIA_ĐÌNH_2014">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Văn_bản_luật"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Ly_hôn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Ly_hôn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Yêu_cầu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Phạt_bổ_sung -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Phạt_bổ_sung">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cách_giải_quyết"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Phạt_tiền -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Phạt_tiền">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cách_giải_quyết"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_kết_hôn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_kết_hôn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_ly_hôn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_ly_hôn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_về_giám_hộ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_về_giám_hộ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_về_nuôi_con_nuôi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_về_nuôi_con_nuôi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_về_sinh_con -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_về_sinh_con">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_về_văn_phòng_con_nuôi_nước_ngoài_tại_Việt_Nam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_về_văn_phòng_con_nuôi_nước_ngoài_tại_Việt_Nam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Sử_dụng_giấy_tờ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Sử_dụng_giấy_tờ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Thủ_tục -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Thủ_tục">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vấn_đề_pháp_lý"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Tảo_hôn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Tảo_hôn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Tẩy_xóa_sửa_chữa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Tẩy_xóa_sửa_chữa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Hành_vi_vi_phạm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Tập_quán_về_hôn_nhân_và_gia_đình -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Tập_quán_về_hôn_nhân_và_gia_đình">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Yêu_cầu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vấn_đề_pháp_lý"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Văn_bản_luật -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Văn_bản_luật"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vấn_đề_pháp_lý -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vấn_đề_pháp_lý"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Yêu_cầu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Yêu_cầu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Nghị_định_82/2020/NĐ-CP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Nghị_định_82/2020/NĐ-CP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Văn_bản_luật"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#CanTroKH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#CanTroKH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cản_trở_kết_hôn"/>
+        <luat:Ten>Cản trở kết hôn</luat:Ten>
+        <luat:YNghia>Việc đe dọa, uy hiếp tinh thần, hành hạ, ngược đãi, yêu sách của cải hoặc hành vi khác để ngăn cản việc kết hôn của người có đủ điều kiện kết hôn theo quy định của Luật này hoặc buộc người khác phải duy trì quan hệ hôn nhân trái với ý muốn của họ</luat:YNghia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#CanTroKetHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#CanTroKetHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat3trden5tr"/>
+        <luat:hasViolation rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#HanhViCanTroKetHon"/>
+        <luat:relatesToLaw rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu59"/>
+        <luat:Chi_tiết_về_vi_phạm>Cản trở kết hôn, yêu sách của cải trong kết hôn</luat:Chi_tiết_về_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#CanTroLyHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#CanTroLyHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cản_trở_ly_hôn"/>
+        <luat:Ten>Cản trở ly hôn</luat:Ten>
+        <luat:YNghia>Việc đe dọa, uy hiếp tinh thần, hành hạ, ngược đãi, yêu sách của cải hoặc hành vi khác để ngăn cản việc kết hôn của người có đủ điều kiện kết hôn theo quy định của Luật này hoặc buộc người khác phải duy trì quan hệ hôn nhân trái với ý muốn của họ</luat:YNghia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ChungSongNhuVoChong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ChungSongNhuVoChong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chung_sống_như_vợ_chồng"/>
+        <luat:Ten>Chung sống như vợ chồng</luat:Ten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#CungCapThongTinGia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#CungCapThongTinGia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cung_cấp_thông_tin"/>
+        <luat:Chi_tiết_hành_vi_vi_phạm>Cung cấp thông tin, tài liệu làm chứng sai sự thật</luat:Chi_tiết_hành_vi_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#CuongEpKetHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#CuongEpKetHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cưỡng_ép_kết_hôn"/>
+        <luat:Ten>Cưỡng ép kết hôn</luat:Ten>
+        <luat:YNghia>Việc đe dọa, uy hiếp tinh thần, hành hạ, ngược đãi, yêu sách của cải hoặc hành vi khác để buộc người khác phải kết hôn hoặc ly hôn trái với ý muốn của họ</luat:YNghia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#CuongEpLyHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#CuongEpLyHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cưỡng_ép_ly_hôn"/>
+        <luat:Ten>Cưỡng ép ly hôn</luat:Ten>
+        <luat:YNghia>Việc đe dọa, uy hiếp tinh thần, hành hạ, ngược đãi, yêu sách của cải hoặc hành vi khác để buộc người khác phải kết hôn hoặc ly hôn trái với ý muốn của họ</luat:YNghia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#DangKyKetHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#DangKyKetHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Thủ_tục"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#DangKyKetHon1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#DangKyKetHon1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#XuPhatTichThuTangVat"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat1trden3tr"/>
+        <luat:hasViolation rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#TayXoaSuaChua"/>
+        <luat:relatesToLaw rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu38"/>
+        <luat:Chi_tiết_về_vi_phạm>Tẩy xoá, sửa chữa làm sai lệch nội dung giấy tờ do cơ quan, tổ chức, người có thẩm quyền cấp để làm thủ tục đăng ký kết hôn</luat:Chi_tiết_về_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#DangKyKetHon2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#DangKyKetHon2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat3trden5tr"/>
+        <luat:hasViolation rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#SuDungGiayTo"/>
+        <luat:relatesToLaw rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu38"/>
+        <luat:Chi_tiết_về_vi_phạm>Cho người khác sử dụng giấy tờ của mình để làm thủ tục đăng ký kết hôn hoặc sử dụng giấy tờ của người khác để làm thủ tục đăng ký kết hôn;</luat:Chi_tiết_về_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#DangKyKetHon3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#DangKyKetHon3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat3trden5tr"/>
+        <luat:hasViolation rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#CungCapThongTinGia"/>
+        <luat:relatesToLaw rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu38"/>
+        <luat:Chi_tiết_về_vi_phạm>Cung cấp thông tin, tài liệu hoặc cam đoan, làm chứng sai sự thật về tình trạng hôn nhân để làm thủ tục đăng ký kết hôn</luat:Chi_tiết_về_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#DuyTriQuanHeVoChong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#DuyTriQuanHeVoChong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Tảo_hôn"/>
+        <luat:Chi_tiết_hành_vi_vi_phạm>Hành vi tảo hôn</luat:Chi_tiết_hành_vi_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#DuyTriVoChongChuaDuTuoi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#DuyTriVoChongChuaDuTuoi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat3trden5tr"/>
+        <luat:hasViolation rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#DuyTriQuanHeVoChong"/>
+        <luat:relatesToLaw rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu58"/>
+        <luat:Chi_tiết_về_vi_phạm>Duy trì quan hệ vợ chồng trái pháp luật với người chưa đủ tuổi kết hôn mặc dù đã có bản án, quyết định đã có hiệu lực pháp luật của Toà án.</luat:Chi_tiết_về_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#HanhViCanTroKetHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#HanhViCanTroKetHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cản_trở_kết_hôn"/>
+        <luat:Chi_tiết_hành_vi_vi_phạm>Cản trở kết hôn</luat:Chi_tiết_hành_vi_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#HanhViCanTroLyHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#HanhViCanTroLyHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cản_trở_ly_hôn"/>
+        <luat:Chi_tiết_hành_vi_vi_phạm>Cản trở ly hôn</luat:Chi_tiết_hành_vi_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#HanhViCuongEpKetHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#HanhViCuongEpKetHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cưỡng_ép_kết_hôn"/>
+        <luat:Chi_tiết_hành_vi_vi_phạm>Cưỡng ép kết hôn</luat:Chi_tiết_hành_vi_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#HanhViCuongEpLyHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#HanhViCuongEpLyHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Cưỡng_ép_ly_hôn"/>
+        <luat:Chi_tiết_hành_vi_vi_phạm>Cưỡng ép ly hôn</luat:Chi_tiết_hành_vi_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#KetHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#KetHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Kết_hôn"/>
+        <luat:Ten>Kết hôn</luat:Ten>
+        <luat:YNghia>là việc nam và nữ xác lập quan hệ vợ chồng với nhau theo quy định của Luật này về điều kiện kết hôn và đăng ký kết hôn</luat:YNghia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#LyHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#LyHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Ly_hôn"/>
+        <luat:Ten>Ly hôn</luat:Ten>
+        <luat:YNghia>Việc chấm dứt quan hệ vợ chồng theo bản án, quyết định có hiệu lực pháp luật của Tòa án</luat:YNghia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#MotVoMotChong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#MotVoMotChong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Chế_độ_hôn_nhân_một_vợ_một_chồng"/>
+        <luat:Chi_tiết_hành_vi_vi_phạm>Vi phạm chế độ hôn nhân một vợ, một chồng</luat:Chi_tiết_hành_vi_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#MotVoMotChong1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#MotVoMotChong1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat3trden5tr"/>
+        <luat:hasViolation rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#MotVoMotChong"/>
+        <luat:relatesToLaw rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu59"/>
+        <luat:Chi_tiết_về_vi_phạm>Đang có vợ hoặc đang có chồng mà kết hôn với người khác, chưa có vợ hoặc chưa có chồng mà kết hôn với người mà mình biết rõ là đang có chồng hoặc đang có vợ;</luat:Chi_tiết_về_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#MotVoMotChong2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#MotVoMotChong2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat3trden5tr"/>
+        <luat:hasViolation rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#MotVoMotChong"/>
+        <luat:relatesToLaw rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu59"/>
+        <luat:Chi_tiết_về_vi_phạm>Đang có vợ hoặc đang có chồng mà chung sống như vợ chồng với người khác;</luat:Chi_tiết_về_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#MotVoMotChong3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#MotVoMotChong3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat3trden5tr"/>
+        <luat:hasViolation rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#MotVoMotChong"/>
+        <luat:relatesToLaw rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu59"/>
+        <luat:Chi_tiết_về_vi_phạm>Chưa có vợ hoặc chưa có chồng mà chung sống như vợ chồng với người mà mình biết rõ là đang có chồng hoặc đang có vợ;</luat:Chi_tiết_về_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu38 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu38">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Nghị_định_82/2020/NĐ-CP"/>
+        <luat:Chi_tiết_về_pháp_luật>Điều 38 Nghị định 82/2020/NĐ-CP có hiệu lực từ ngày 01/9/2020</luat:Chi_tiết_về_pháp_luật>
+        <luat:trang_web>https://luatvietnam.vn/doanh-nghiep/nghi-dinh-82-2020-xu-phat-hanh-chinh-linh-vuc-hon-nhan-gia-dinh-186730-d1.html</luat:trang_web>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu58 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu58">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Nghị_định_82/2020/NĐ-CP"/>
+        <luat:Chi_tiết_về_pháp_luật>Chương IV, Điều 58 Nghị định 82/2020/NĐ-CP có hiệu lực từ ngày 01/9/2020</luat:Chi_tiết_về_pháp_luật>
+        <luat:trang_web>https://luatvietnam.vn/doanh-nghiep/nghi-dinh-82-2020-xu-phat-hanh-chinh-linh-vuc-hon-nhan-gia-dinh-186730-d1.html</luat:trang_web>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu59 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu59">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Nghị_định_82/2020/NĐ-CP"/>
+        <luat:Chi_tiết_về_pháp_luật>Chương IV, Điều 59 Nghị định 82/2020/NĐ-CP có hiệu lực từ ngày 01/9/2020</luat:Chi_tiết_về_pháp_luật>
+        <luat:trang_web>https://luatvietnam.vn/doanh-nghiep/nghi-dinh-82-2020-xu-phat-hanh-chinh-linh-vuc-hon-nhan-gia-dinh-186730-d1.html</luat:trang_web>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu60 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu60">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Nghị_định_82/2020/NĐ-CP"/>
+        <luat:Chi_tiết_về_pháp_luật>Chương IV Điều 60 Nghị định 82/2020/NĐ-CP có hiệu lực từ ngày 01/9/2020</luat:Chi_tiết_về_pháp_luật>
+        <luat:trang_web>https://luatvietnam.vn/doanh-nghiep/nghi-dinh-82-2020-xu-phat-hanh-chinh-linh-vuc-hon-nhan-gia-dinh-186730-d1.html</luat:trang_web>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu61 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu61">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Nghị_định_82/2020/NĐ-CP"/>
+        <luat:Chi_tiết_về_pháp_luật>Chương IV Điều 61 Nghị định 82/2020/NĐ-CP có hiệu lực từ ngày 01/9/2020</luat:Chi_tiết_về_pháp_luật>
+        <luat:trang_web>https://luatvietnam.vn/doanh-nghiep/nghi-dinh-82-2020-xu-phat-hanh-chinh-linh-vuc-hon-nhan-gia-dinh-186730-d1.html</luat:trang_web>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu62 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu62">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Nghị_định_82/2020/NĐ-CP"/>
+        <luat:Chi_tiết_về_pháp_luật>Chương IV, Điều 62 Nghị định 82/2020/NĐ-CP có hiệu lực từ ngày 01/9/2020</luat:Chi_tiết_về_pháp_luật>
+        <luat:trang_web>https://luatvietnam.vn/doanh-nghiep/nghi-dinh-82-2020-xu-phat-hanh-chinh-linh-vuc-hon-nhan-gia-dinh-186730-d1.html</luat:trang_web>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu63 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu63">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Nghị_định_82/2020/NĐ-CP"/>
+        <luat:Chi_tiết_về_pháp_luật>Chương IV, Điều 63 Nghị định 82/2020/NĐ-CP có hiệu lực từ ngày 01/9/2020</luat:Chi_tiết_về_pháp_luật>
+        <luat:trang_web>https://luatvietnam.vn/doanh-nghiep/nghi-dinh-82-2020-xu-phat-hanh-chinh-linh-vuc-hon-nhan-gia-dinh-186730-d1.html</luat:trang_web>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhKetHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhKetHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_kết_hôn"/>
+        <luat:Chi_tiết_hành_vi_vi_phạm>Hành vi vi phạm quy định về kết hôn</luat:Chi_tiết_hành_vi_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhKetHon1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhKetHon1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat10trden20tr"/>
+        <luat:hasViolation rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhKetHon"/>
+        <luat:relatesToLaw rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu59"/>
+        <luat:Chi_tiết_về_vi_phạm>Kết hôn hoặc chung sống như vợ chồng giữa những người cùng dòng máu về trực hệ hoặc giữa những người có họ trong phạm vi ba đời</luat:Chi_tiết_về_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhKetHon2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhKetHon2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat10trden20tr"/>
+        <luat:hasViolation rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhKetHon"/>
+        <luat:relatesToLaw rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu59"/>
+        <luat:Chi_tiết_về_vi_phạm>Kết hôn hoặc chung sống như vợ chồng giữa cha, mẹ nuôi với con nuôi;</luat:Chi_tiết_về_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhKetHon3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhKetHon3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat10trden20tr"/>
+        <luat:hasViolation rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhKetHon"/>
+        <luat:relatesToLaw rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu59"/>
+        <luat:Chi_tiết_về_vi_phạm>Cưỡng ép kết hôn hoặc lừa dối kết hôn</luat:Chi_tiết_về_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhLyHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhLyHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Quy_định_ly_hôn"/>
+        <luat:Chi_tiết_hành_vi_vi_phạm>Hành vi vi phạm quy định về ly hôn</luat:Chi_tiết_hành_vi_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhLyHon1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhLyHon1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat10trden20tr"/>
+        <luat:hasViolation rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhLyHon"/>
+        <luat:relatesToLaw rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu59"/>
+        <luat:Chi_tiết_về_vi_phạm>Lợi dụng việc ly hôn để trốn tránh nghĩa vụ tài sản, vi phạm chính sách, pháp luật về dân số hoặc để đạt được mục đích khác mà không nhằm mục đích chấm dứt hôn nhân.</luat:Chi_tiết_về_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhLyHon2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#QuyDinhLyHon2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat10trden20tr"/>
+        <luat:hasViolation rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#CanTroLyHon"/>
+        <luat:relatesToLaw rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu59"/>
+        <luat:Chi_tiết_về_vi_phạm>Cưỡng ép ly hôn hoặc lừa dối ly hôn</luat:Chi_tiết_về_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#SuDungGiayTo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#SuDungGiayTo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Sử_dụng_giấy_tờ"/>
+        <luat:Chi_tiết_hành_vi_vi_phạm>Cho người khác sử dụng giấy tờ của mình hoặc sử dụng giấy tờ của người khác</luat:Chi_tiết_hành_vi_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#TaoHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#TaoHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Tảo_hôn"/>
+        <luat:Ten>Tảo Hôn</luat:Ten>
+        <luat:YNghia>việc lấy vợ, lấy chồng khi một bên hoặc cả hai bên chưa đủ tuổi kết hôn</luat:YNghia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#TaoHonvaToChucTaoHon1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#TaoHonvaToChucTaoHon1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Vi_phạm_pháp_luật"/>
+        <luat:hasResolution rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat1trden3tr"/>
+        <luat:hasViolation rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ToChucTaoHon"/>
+        <luat:relatesToLaw rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ND2020Dieu58"/>
+        <luat:Chi_tiết_về_vi_phạm>Hành vi tổ chức lấy vợ, lấy chồng cho người chưa đủ tuổi kết hôn.</luat:Chi_tiết_về_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#TayXoaSuaChua -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#TayXoaSuaChua">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Tẩy_xóa_sửa_chữa"/>
+        <luat:Chi_tiết_hành_vi_vi_phạm>Tẩy xoá, sửa chữa làm sai lệch nội dung giấy tờ</luat:Chi_tiết_hành_vi_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ToChucKetHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ToChucKetHon">
+        <luat:Chi_tiết_hành_vi_vi_phạm>Tổ chức tảo hôn</luat:Chi_tiết_hành_vi_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ToChucTaoHon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#ToChucTaoHon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Tảo_hôn"/>
+        <luat:Chi_tiết_hành_vi_vi_phạm>Tổ chức tảo hôn</luat:Chi_tiết_hành_vi_vi_phạm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#XuPhatTichThuTangVat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#XuPhatTichThuTangVat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Phạt_bổ_sung"/>
+        <luat:Chi_tiết_về_cách_giải_quyết>Tịch thu tang vật là giấy tờ, văn bản bị tẩy xóa, sửa chữa làm sai lệch nội dung</luat:Chi_tiết_về_cách_giải_quyết>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat10trden20tr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat10trden20tr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Phạt_tiền"/>
+        <luat:Chi_tiết_về_cách_giải_quyết>Phạt tiền từ 10.000.000 đồng đến 20.000.000 đồng</luat:Chi_tiết_về_cách_giải_quyết>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat1trden3tr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat1trden3tr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Phạt_tiền"/>
+        <luat:Chi_tiết_về_cách_giải_quyết>Phạt tiền từ 1.000.000 đồng đến 3.000.000 đồng</luat:Chi_tiết_về_cách_giải_quyết>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat20trden30tr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat20trden30tr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Phạt_tiền"/>
+        <luat:Chi_tiết_về_cách_giải_quyết>Phạt tiền từ 20.000.000 đồng đến 30.000.000 đồng</luat:Chi_tiết_về_cách_giải_quyết>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat3trden5tr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat3trden5tr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Phạt_tiền"/>
+        <luat:Chi_tiết_về_cách_giải_quyết>Phạt tiền từ 3.000.000 đồng đến 5.000.000 đồng</luat:Chi_tiết_về_cách_giải_quyết>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat3trden7tr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat3trden7tr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Phạt_tiền"/>
+        <luat:Chi_tiết_về_cách_giải_quyết>Phạt tiền từ 3.000.000 đồng đến 7.000.000 đồng</luat:Chi_tiết_về_cách_giải_quyết>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat5trden10tr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat5trden10tr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Phạt_tiền"/>
+        <luat:Chi_tiết_về_cách_giải_quyết>Phạt tiền từ 5.000.000 đồng đến 10.000.000 đồng</luat:Chi_tiết_về_cách_giải_quyết>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat7trden10tr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Xuphat7trden10tr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pinkk/ontologies/2023/5/luat#Phạt_tiền"/>
+        <luat:Chi_tiết_về_cách_giải_quyết>Phạt tiền từ 7.000.000 đồng đến 10.000.000 đồng</luat:Chi_tiết_về_cách_giải_quyết>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
